@@ -1,1 +1,0 @@
-FORD,300,3.2,FULL,V6,ford
