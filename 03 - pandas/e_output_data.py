@@ -11,7 +11,7 @@ import numpy as np
 import os
 import sqlite3
 
-path_guardado = 'C://Users//jeffe//Documents//GIT//python//py-collantes-yunga-jefferson-paul//03 - pandas//data//artwork_data.pickle'
+
 
 df = pd.read_pickle(path_guardado)
 
