@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrapy</title>
+    <style>
+        /*id 
+        # + nombreID
+        */
+        
+        #titulo-uno {
+            background-color: aqua;
+        }
+        /*estilos por los nombre de etiqueta*/
+        
+        h1 {
+            background-color: green;
+        }
+        
+        body {
+            color: brown;
+            background-color: cornsilk;
+        }
+        
+        p {
+            background-color: blue;
+        }
+        /*Clases
+        importa el orden en el que se defina por que es en cascada
+        */
+        
+        .fondo-rojo {
+            background-color: red;
+        }
+        
+        .fondo-verde {
+            background-color: green;
+        }
+        
+        .fondo-amarillo {
+            background-color: yellow;
+        }
+        /*Jerarquia*/
+        /*etiquetas dentro de otra etiqueta*/
+        
+        li>p {
+            background-color: violet;
+        }
+        
+        body>ul>li>p {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="titulo-uno">Titulo</h1>
+    <h1>otro titulo</h1>
+    <p>parrafo uno</p>
+    <h1 class="fondo-amarillo fondo-rojo fondo-verde " style="background-color: black;" id="titulo-uno">
+        tercer titulo
+    </h1>
+    <p>parrafo2</p>
+    <p class="fondo-rojo">parrafo 3</p>
+    <ul>
+        <li>uno</li>
+        <li>
+            <p>dos</p>
+        </li>
+        <li>tres</li>
+    </ul>
+    <li>
+        <p>Fuera de la ul</p>
+    </li>
+</body>
+
+</html>
