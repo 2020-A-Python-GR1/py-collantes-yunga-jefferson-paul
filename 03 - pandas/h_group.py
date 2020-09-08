@@ -51,7 +51,11 @@ def llenar_valores_vacios(series, tipo):
             series_valores_llenos = series.fillna(promedio)
             return series_valores_llenos
         if (tipo == 'mas_repetido'):
-            pass
+            valores_m_repetidos = series.value_counts().iloc[0]
+            series_valores_llenos = series.fillna(valores_m_repetidos)
+            return series_valores_llenos
+        
+        
 
             
             
